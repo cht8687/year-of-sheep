@@ -1,6 +1,6 @@
 {
   "name": "year-of-sheep",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Check if is year of Sheep",
   "main": "index.js",
   "scripts": {

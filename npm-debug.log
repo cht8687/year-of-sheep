@@ -1,0 +1,121 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/robert/Documents/github/opensource/year-of/year-of-sheep',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/robert/.npm/year-of-sheep/1.0.5/package.tgz not in flight; packing
+9 verbose correctMkdir /home/robert/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/home/robert/.npm/year-of-sheep/1.0.5/package.tgz',
+10 verbose tar pack   '/home/robert/Documents/github/opensource/year-of/year-of-sheep' ]
+11 verbose tarball /home/robert/.npm/year-of-sheep/1.0.5/package.tgz
+12 verbose folder /home/robert/Documents/github/opensource/year-of/year-of-sheep
+13 info prepublish year-of-sheep@1.0.5
+14 verbose addLocalTarball adding from inside cache /home/robert/.npm/year-of-sheep/1.0.5/package.tgz
+15 verbose correctMkdir /home/robert/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd year-of-sheep@1.0.5
+17 verbose afterAdd /home/robert/.npm/year-of-sheep/1.0.5/package/package.json not in flight; writing
+18 verbose correctMkdir /home/robert/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /home/robert/.npm/year-of-sheep/1.0.5/package/package.json written
+20 silly publish { name: 'year-of-sheep',
+20 silly publish   version: '1.0.5',
+20 silly publish   description: 'Check if is year of Sheep',
+20 silly publish   main: 'index.js',
+20 silly publish   scripts: { test: 'node test' },
+20 silly publish   keywords:
+20 silly publish    [ 'year',
+20 silly publish      'year-of',
+20 silly publish      'chinese',
+20 silly publish      'zodiac',
+20 silly publish      'rat',
+20 silly publish      'ox',
+20 silly publish      'tiger',
+20 silly publish      'rabbit',
+20 silly publish      'dragon',
+20 silly publish      'snake',
+20 silly publish      'horse',
+20 silly publish      'sheep',
+20 silly publish      'monkey',
+20 silly publish      'rooster',
+20 silly publish      'dog',
+20 silly publish      'pig' ],
+20 silly publish   author: { name: 'Robert Chang', email: 'cht8687@gmail.com' },
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/cht8687/year-of-sheep.git' },
+20 silly publish   license: 'MIT',
+20 silly publish   devDependencies: { tape: '^4.6.0' },
+20 silly publish   readme: '# year-of-sheep [![Build Status](https://travis-ci.org/cht8687/year-of-sheep.svg?branch=master)](https://travis-ci.org/cht8687/year-of-sheep)\n\n> Check if is year of Sheep\n\n## Install\n\n```\n$ npm install --save year-of-sheep\n```\n\n## Usage\n\n```js\n\nconst yearOfSheep = require(\'year-of-sheep\');\n\nyearOfSheep(1991);\n// true\n\nyearOfSheep(1992);\n// false\n\n\n```\n## API\n\n### yearOfSheep([year])\n\n#### year\n\nType: `number`  \nDefault: current year\n\n### yearOfSheep([date])\n\n#### date\n\nType: `date`  \nDefault: `new Date()`\n\n## License\n\nMIT © [haotian Chang](https://github.com/cht8687)\n',
+20 silly publish   readmeFilename: 'readme.md',
+20 silly publish   gitHead: 'b71a99d2a5e9e78deda2024d6631b462fd1f3114',
+20 silly publish   bugs: { url: 'https://github.com/cht8687/year-of-sheep/issues' },
+20 silly publish   homepage: 'https://github.com/cht8687/year-of-sheep#readme',
+20 silly publish   _id: 'year-of-sheep@1.0.5',
+20 silly publish   _shasum: 'e2222dcaa94a2ea2810e06b51ece0f2f9f18add1',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name year-of-sheep
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'year-of-sheep',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'year-of-sheep',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/year-of-sheep
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /home/robert/.npm/year-of-sheep/1.0.5/package.tgz
+29 verbose request uri https://registry.npmjs.org/year-of-sheep
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 9:25:14 AM
+32 verbose request using bearer token for auth
+33 verbose request id 855f5f03b940df68
+34 http request PUT https://registry.npmjs.org/year-of-sheep
+35 http 403 https://registry.npmjs.org/year-of-sheep
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 17 Sep 2016 23:25:24 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-syd1625-SYD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1474154723.539969,VS0,VE667',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /home/robert/.npm/registry.npmjs.org/year-of-sheep on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.5." : year-of-sheep
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+40 verbose statusCode 403
+41 verbose pkgid year-of-sheep
+42 verbose cwd /home/robert/Documents/github/opensource/year-of/year-of-sheep
+43 error Linux 3.16.0-4-amd64
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.5.0
+46 error npm  v2.15.9
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.5." : year-of-sheep
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
